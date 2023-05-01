@@ -1,5 +1,11 @@
 let calculatorOut = document.querySelector('.calculator-out');
 let calculatorButtons = document.querySelectorAll('button');
+let themeToggle = document.querySelector('#switch-theme-toggle');
+let calculatorContainer = document.querySelector('.container');
+
+themeToggle.addEventListener('click', () => {
+    calculatorContainer.classList.toggle('dark');
+})
 
 calculatorButtons.forEach(item => {
     item.addEventListener('click', () => {
